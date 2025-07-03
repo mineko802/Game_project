@@ -5,9 +5,10 @@ using UnityEngine;
 public class ari : MonoBehaviour
 {
     // Start is called before the first frame update
+    public CameraController cameraController;
     void Start()
     {
-       
+        cameraController.SetPosition(transform.position);
     }
 
     // Update is called once per frame
@@ -26,6 +27,8 @@ public class ari : MonoBehaviour
             pos.x += 0.05f;
             transform.position = pos;
         }
+
+        cameraController.SetPosition(transform.position);
         
     }
 }
