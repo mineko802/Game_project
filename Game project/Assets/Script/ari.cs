@@ -17,14 +17,14 @@ public class ari : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow)|| Input.GetKey("a"))
         {
             Vector2 pos = transform.position;
-            pos.x -= 0.05f;
+            pos.x -= 0.02f;
             transform.position = pos;
         }
 
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey("d"))
         {
             Vector2 pos = transform.position;
-            pos.x += 0.05f;
+            pos.x += 0.02f;
             transform.position = pos;
         }
 
