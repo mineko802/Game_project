@@ -17,7 +17,7 @@ public class Gimmic_DamageBlock : MonoBehaviour
     {
         string tag = collision.gameObject.tag;
 
-        if (tag == "ari")
+        if (tag == "Player")
         {
             // アリにダメージを与える
             collision.gameObject.GetComponent<ari>().Damaged(damage);
@@ -28,11 +28,10 @@ public class Gimmic_DamageBlock : MonoBehaviour
     {
         string tag = collision.gameObject.tag;
         Debug.Log(tag);
-        if (tag == "ari")
+        if (tag == "Player")
         {
             // アリにダメージを与える
             collision.gameObject.GetComponent<ari>().Damaged(damage);
-            Debug.Log("アリにぶつかった");
         }
     }
 }

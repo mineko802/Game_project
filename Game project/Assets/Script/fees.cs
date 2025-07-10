@@ -18,7 +18,7 @@ public class fees : MonoBehaviour
     {
         float y = movepowre * Mathf.Sin(Time.time);
 
-        Debug.Log(Mathf.Sin(Time.time));
+        
 
         pusher.transform.localPosition = new Vector3(0, y, 0) + defaultPosition;
     }
