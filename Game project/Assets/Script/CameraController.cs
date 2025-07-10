@@ -16,8 +16,8 @@ public class CameraController : MonoBehaviour
     private void FixedUpdate()
     {
         Vector3 pos = transform.localPosition;
-        pos.x = basePos.x + 2.5f;
-        pos.y = basePos.y + 1.5f;
+        pos.x = basePos.x + 8f;
+        pos.y = basePos.y + 6f;
 
         transform.localPosition = Vector3.Lerp(transform.localPosition, pos, 0.08f);
     }
