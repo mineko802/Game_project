@@ -5,6 +5,7 @@ using UnityEngine;
 public class ari : MonoBehaviour
 {
     public CameraController cameraController;
+    public int hitpoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +31,10 @@ public class ari : MonoBehaviour
 
         //cameraController.SetPosition(transform.position);
 
+    }
+
+    public void Damaged(int nun)
+    {
+        hitpoint = hitpoint - 1;
     }
 }
