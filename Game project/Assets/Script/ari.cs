@@ -28,7 +28,7 @@ public class ari : MonoBehaviour
             transform.position = pos;
         }
 
-        cameraController.SetPosition(transform.position);
+        //cameraController.SetPosition(transform.position);
 
     }
 }
