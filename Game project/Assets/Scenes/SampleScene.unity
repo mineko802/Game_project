@@ -28070,7 +28070,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &824429351
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28633,6 +28633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showObject: {fileID: 824429350}
+  aristarts: {fileID: 1112035064}
 --- !u!1 &1133682264
 GameObject:
   m_ObjectHideFlags: 0
@@ -28780,7 +28781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1141500924
 RectTransform:
   m_ObjectHideFlags: 0
