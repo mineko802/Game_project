@@ -6,28 +6,21 @@ public class ari : MonoBehaviour
 {
     public CameraController cameraController;
     public int hitpoint;
+    public float speed;
+    private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         cameraController.SetPosition(transform.position);
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.LeftArrow)|| Input.GetKey("a"))
-        {
-            Vector2 pos = transform.position;
-            pos.x -= 0.0175f;
-            transform.position = pos;
-        }
+        float horizontalKey = Input.GetAxis("Horizontal");
 
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey("d"))
-        {
-            Vector2 pos = transform.position;
-            pos.x += 0.0175f;
-            transform.position = pos;
-        }
+        rb.velocity = new Vector2(horizontalKey * speed, rb.velocity.y);
 
         //cameraController.SetPosition(transform.position);
 

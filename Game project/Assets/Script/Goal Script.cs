@@ -18,6 +18,7 @@ public class Goal : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             showObject.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 }
