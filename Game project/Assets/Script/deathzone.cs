@@ -27,6 +27,7 @@ public class Gimmic_DamageBlock : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         string tag = collision.gameObject.tag;
+        Debug.Log(tag);
         if (tag == "Player")
         {
             // アリにダメージを与える

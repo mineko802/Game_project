@@ -5,7 +5,6 @@ using UnityEngine;
 public class GameOver : MonoBehaviour
 {
     public GameObject showObject;
-    public ari aristarts;
     void Start()
     {
         showObject.SetActive(false);
@@ -20,13 +19,4 @@ public class GameOver : MonoBehaviour
             showObject.SetActive(true);
         }
     }
-
-    void Update()
-    {
-        if (aristarts.hitpoint == 0)
-        {
-            showObject.SetActive(true);
-        }
-    }
-
 }
